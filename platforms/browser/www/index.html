@@ -48,13 +48,16 @@
         <div id="deviceready" class="blink">
             <p class="event listening">Connecting to Device</p>
             <p class="event received">Device is Ready</p>
-            </div>
+        </div>
             <button onclick="shake()">Vibrate Phone</button>
+            <button onclick="takePicture()">take Picture</button>
+             <img sid="myImage" height="50%" width="50%"></img>
+
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
-        app.initialize();
+        app.initialize();  
     </script>
 </body>
 

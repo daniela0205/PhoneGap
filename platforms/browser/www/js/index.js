@@ -51,3 +51,21 @@ var app = {
 function shake(){
     navigator.vibrate(3000);
 }
+
+function pics(){
+    navigator.camera.getPicture(cameraCallback, onError);
+}
+
+function cameraCallback(imageData) {
+    var image = document.getElementById('myImage');
+    image.src = imageData
+}
+
+function onError(errorMessage){
+    console.log(errorMessage);
+
+}
+
+function takePicture(){
+ navigator.camera.getPicture(cameraCallback, onError);
+}
